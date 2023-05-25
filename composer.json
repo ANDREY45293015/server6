@@ -1,0 +1,22 @@
+{
+    "name": "andrey45293015/server6",
+    "description": "php-server",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andrey",
+            "email": "45293015andrey@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    }
+}
