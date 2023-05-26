@@ -1,12 +1,8 @@
-<?php
-
-namespace Model;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Post extends Model
-{
-    use HasFactory;
-    public $timestamps = false;
-}
+<h1>Список статей</h1>
+<ol>
+    <?php
+    foreach ($posts as $post) {
+        echo '<li>' . $post->title . '</li>';
+    }
+    ?>
+</ol>
